@@ -1,0 +1,132 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cruds</title>
+</head>
+<body>
+    <style id="TheStyle">*{margin: 0px;padding: 0px;}
+    body{font-family: system-ui;background-color: rgb(34, 34, 34);color: white;}
+    #page{width: 85%;margin: auto;position: relative;}
+    #page-title{text-align: center; text-transform:capitalize ;margin: 10px;}
+    input{width: 100%;height: 40px;background-color: rgb(24, 24, 24);outline: none;border: none;border-radius: 5px;margin: 4px;font-size: 15px;color: white;text-indent: 7px}
+    input:hover{background-color: rgb(14, 14, 14);}
+    #price input{width: 160px;}
+    input:focus{transform: scale(1.1);background-color: rgb(14, 14, 14);border: 1px solid rgb(18, 172, 126);}
+    input::before{content:' ';}
+    #total{background-color: #a81401;border-radius: 5px;padding: 5px;}
+    #total::before {content: 'Total: ';}
+    button{width: 100%;height: 22px;margin: 10px 0; background-color: #12ac7e;border: none;cursor: pointer;border-radius: 8px;transition: 0.3s;}
+    button:hover{background-color: #17cc96;letter-spacing: 1.3px;}
+    #mid{align-items: center;}
+    table{width: 100%;text-align: center;margin: 10px ;}
+    .btn-update{position: relative; right: 5px;}
+    #Error{height: 50px;background-color: rgb(14, 14, 14);margin: 10px;position:relative ;right: 6px;border: #a81401 3px solid;text-align: start;text-indent: 7px;line-height: 47px;text-transform: capitalize;padding: 10px;font-size: 16px;position: relative;display:none;}
+    #THEX{background-color: rgb(236, 14, 14);width: 13px;height: 13px;line-height: 4px;position: relative;left: 6px;bottom: 10px;}
+    #PageText{margin: 10px}
+    #ColspanPlace{text-align: left;font-size: 20px;opacity: 0.5;}
+    input[type=number] {-moz-appearance: textfield;}
+    input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {-webkit-appearance: none;margin: 0;}
+    #ShowTitlePlace{text-transform: capitalize;}
+    #item-count{display: none;}
+    #language{display: inline-block;width: 90px;border-radius: 12px;position: relative;right: 44px;top: 10px;}
+    #languageA{display: inline-block;width: 90px;border-radius: 12px;position: relative;right: 44px;top: 10px;display: none;}
+    #languageE{display: inline-block;width: 90px;border-radius: 12px;position: relative;right: 44px;top: 10px;display: none;}
+    #ChangeModeImage{position: absolute;right: 10px;top: 10px;}</style>
+
+ <img id="ChangeModeImage" src="./Untitled-1.png">
+<div id="page">
+   <button id="language">Language</button>
+   <button id="languageA">Arabic</button>
+   <button id="languageE">English</button>
+
+
+     
+
+<div id="page-title">
+   <div id="PageText"> <h2>FYRNX CRUDS</h2>
+    <h4>a cruds project from Fyrnx</h4></div>
+    <small id="Error">
+
+        
+        </small>
+</div>
+
+
+
+
+
+<div id="top">
+<input type="text" name="item-title" id="item-title" placeholder="Title">
+<div id="price">
+<input type="number" class="InputNumber" name="item-price" id="item-price" placeholder="Price">
+<input type="number" class="InputNumber" name="item-expenses" id="item-expenses" placeholder="Taxes">
+<input type="number" class="InputNumber" name="item-ads" id="item-ads" placeholder="Ads">
+<input type="number" class="InputNumber" name="item-discount" id="item-discount" placeholder="Discount">
+<small id="total" style="background-color: rgb(168, 20, 1);"></small>
+</div>
+<input type="number" class="InputNumber" name="item-count" id="item-count" placeholder="Count" style="display: none;">
+<input type="number" class="InputNumber" name="item-count" id="item-countF" placeholder="Count" style="display: block;">
+<input type="text" name="item-kind" id="item-kind" placeholder="Category">
+<button id="create">Create</button>
+<button id="Uptade" style="display: none;">Uptade</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div id="mid">
+<input type="text" name="search" id="search" placeholder="Seach By Title">
+<button id="switch-search-mode">switch search mode</button>
+<div id="DAD"></div>
+</div>
+
+
+
+
+
+
+
+
+<div id="shows">
+<table id="top-table"><tbody><tr>
+    </tr></tbody><tbody id="ShowTitlePlace"></tbody>
+    <tbody id="place-show"></tbody>
+            <tbody><tr><td colspan="8" id="ColspanPlace">There is nothing to see</td></tr>
+    </tbody></table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
