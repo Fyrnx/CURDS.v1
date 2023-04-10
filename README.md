@@ -1,7 +1,9 @@
-# CURDS.v1
-CURDS ( Data management ) project 
+## CURDS.v1 
+#### CURDS ( Data management ) project 
 
-This is A 
+---
+
+> ### This is A 
 
 - Create 
 - Update
@@ -9,11 +11,14 @@ This is A
 - Delete
 - Search
 
-a Project By 
 
+---
+> ## a Project By 
 - Java Script
 - HMTL
 - Css
 
-to Data management 
 
+---
+
+![image](./thumbnail.png)
