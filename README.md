@@ -6,8 +6,8 @@
 > ### This is A 
 
 - Create 
-- Update
 - Read
+- Update
 - Delete
 - Search
 
